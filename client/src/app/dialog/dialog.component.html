@@ -1,0 +1,68 @@
+<div class="container">
+  <h2 mat-dialog-title>Task details</h2>
+  <form [formGroup]="taskForm" class="example-form" (submit)="submitForm()">
+
+  <mat-dialog-content>
+      <label>Task Name
+        <input type="text" id="title" formControlName="title" />
+      </label>
+      <label>Task Description
+        <textarea id="description" placeholder="Enter a short description" formControlName="detail"></textarea>
+      </label>
+      <h3>Icon</h3>
+
+    <img src="../assets/man-technologist-light-skin-tone.png" #man class="icons" id="0" [style.background-color]="selectedImage[0] ? '#F5D565' : '#E3E8EF'"  (click)="selectIcon(0,man)" />
+    <img src="../assets/message.png" #message class="icons" id="0" [style.background-color]="selectedImage[1] ? '#F5D565' : '#E3E8EF'"  (click)="selectIcon(1,message)" />
+    <img src="../assets/hot-beverage.png" #beverage class="icons" id="0" [style.background-color]="selectedImage[2] ? '#F5D565' : '#E3E8EF'"  (click)="selectIcon(2,beverage)" />
+    <img src="../assets/person-lifting-weights.png" #person class="icons" id="0" [style.background-color]="selectedImage[3] ? '#F5D565' : '#E3E8EF'"  (click)="selectIcon(3,person)" />
+    <img src="../assets/books.png" #books class="icons" id="0" [style.background-color]="selectedImage[4] ? '#F5D565' : '#E3E8EF'" (click)="selectIcon(4,books)" />
+    <img src="../assets/clock.png" #clock class="icons" id="0" [style.background-color]="selectedImage[5] ? '#F5D565' : '#E3E8EF'"  (click)="selectIcon(5,clock)" />
+
+
+    <h3>Status</h3>
+    <section>
+      <div class="example-button-row">
+        <div class="example-flex-container">
+          <div class="example-button-container">
+            <button class="statusButton" type="button" value="In Progress" (click)="chooseStatus('In Progress')">
+              <img src="../assets/Time_atack_duotone.svg" width="20px" height="20px" class="icons"
+                style="background-color: #E9A23B;" />
+              In Progress
+            </button>
+          </div>
+          <div class="example-button-container">
+            <button class="statusButton" type="button" value="Completed" (click)="chooseStatus('Completed')">
+              <img src="../assets/Done_round_duotone.svg" width="20px" height="20px" class="icons"
+                style="background-color: #32D657;" />
+              Completed
+            </button>
+          </div>
+          <div class="example-button-container">
+            <button class="statusButton"type="button" value="Won't do" (click)="chooseStatus('Won\'t Do')">
+              <img src="../assets/close_ring_duotone.svg" width="20px" height="20px" class="icons"
+                style="background-color: #DD524C;" />
+              Won’t do
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="close" type="button" (click)="delete()">
+      Delete
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete" class="dialogAction"></mat-icon>
+    </button>
+    <button class="close" type="submit">Save
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="check" class="dialogAction"></mat-icon>
+    </button>
+
+  </mat-dialog-actions>
+
+</form>
+
+
+</div>

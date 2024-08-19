@@ -1,0 +1,177 @@
+.container{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 400px;
+}
+
+h2{
+  font-size: 16px;
+  font-weight:bold;
+}
+
+/* .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+  .mat-mdc-chip-set {
+    max-width: 200px;
+  }
+
+  mat-chip{
+    border:1px solid #00000033;
+    background-color: #F8FAFC;
+    height: 50px;
+    padding: 0px 0px;
+    width: auto;
+
+  } */
+
+ /* .example-button-container button{
+    border:1px solid #00000033;
+    background-color: #F8FAFC;
+    height: 50px;
+    padding: 0px 0px;
+    text-align: left;
+    width: 300px;
+  } */
+  label,h3{
+    font-size: 12px;
+    font-weight:400;
+    margin: 20px 0px 5px 0px;
+  }
+  
+  input, textarea{
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0px;
+    height: 30px;
+    padding: 2px 5px;
+    border: 2px solid #9c8d8d33;
+
+  }
+
+  input#title:active, textarea:active {
+    border: 2px solid #3662E3;
+  }
+
+  #description{
+    height: 150px;
+
+  }
+  
+    
+
+.icons{
+    background-color:#E3E8EF;
+    background-clip: border-box;
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+
+  
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 28px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    /* width: 220px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    padding: 0px; */
+    margin: 5px;
+   
+  }
+
+  .statusButton{
+    width: 280px;
+    border: 2px solid #00000033;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: left;
+    background-color: #F8FAFC;
+    font-weight:400;
+    font-size: 14px;
+  }
+
+  .statusButton:focus{
+    border: 2px solid #3662E3;
+
+  }
+
+
+
+  #mat-flat-button{
+    border-radius: 2px;
+    background-color: #3662E3;
+  }
+
+  .close {
+    background-color: #3662E3;
+    border-radius: 20px;
+    border: none;
+    color: #E3E8EF;
+    width: 110px;
+    height: 40px;
+    /* vertical-align: middle; */
+    text-align: center;
+    /* float: right; */
+    position: relative;
+    bottom: 0px;
+    left:350px;
+    margin:10px;
+    line-height: 32px;
+    /* align-items: center; */
+
+  }
+
+
+
+  .dialogAction{
+    /* padding: 10px; */
+    height: 30px;
+    width: 20px;
+    /* line-height: 32px; */ 
+    vertical-align: middle;
+
+  }
+
+ 
+  
