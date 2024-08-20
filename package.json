@@ -4,8 +4,9 @@
     "description": "",
     "main": "server.ts",
     "scripts": {
-      "install-server": "cd server && npm install",
-      "start-server": "cd server && npx ts-node src/server.ts",
+      "install-server": "cd server && rm -rf node_modules && npm install",
+      "prestart": "cd server && chmod +x node_modules/.bin/ts-node",
+      "start-server": "cd server &&  npx ts-node src/server.ts",
       "install-client": "cd client && npm install",
       "build-client": "cd client && npm run build",
       "start-client": "cd client && npm run start"
