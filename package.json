@@ -2,7 +2,7 @@
     "name": "todo-mern",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "server.ts",
     "scripts": {
       "install-server": "cd server && npm install",
       "start-server": "cd server && npx ts-node src/server.ts",
