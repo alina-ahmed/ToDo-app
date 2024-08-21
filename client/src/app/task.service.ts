@@ -43,7 +43,7 @@ import { environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class TaskService {
-  private url = environment;
+  private url = environment.baseURL;
   tasks$ = signal<Task[]>([]);
   task$ = signal<Task>({} as Task);
   
