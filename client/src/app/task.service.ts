@@ -42,7 +42,7 @@ import { Task } from './task';
   providedIn: 'root'
 })
 export class TaskService {
-  private url = 'http://localhost:5200';
+  private url = BACKEND_URL;
   tasks$ = signal<Task[]>([]);
   task$ = signal<Task>({} as Task);
   
