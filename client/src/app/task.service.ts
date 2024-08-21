@@ -37,12 +37,13 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Task } from './task';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
-  private url = 'http://localhost:5200';
+  private url = environment;
   tasks$ = signal<Task[]>([]);
   task$ = signal<Task>({} as Task);
   
